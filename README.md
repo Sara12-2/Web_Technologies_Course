@@ -73,42 +73,7 @@ This section contains the assignments given during the Web Technologies course.
 
 Each assignment will be added with its related files and implementation.
 
-### Assignment Topics
-
-* HTML Basics
-* HTML Elements
-* Tables and Lists
-* Links and Images
-* Forms
-* CSS
-* JavaScript
-* Web Development Concepts
-* Browser Developer Tools
-* HTTP and URL Requests
-* Other assigned tasks
-
 ---
-
-## Labs
-
-The `Labs` folder contains practical work completed during Web Technologies laboratory sessions.
-
-Lab work may include:
-
-* HTML page creation
-* HTML elements practice
-* Tables
-* Lists
-* Links
-* Images
-* Div layouts
-* CSS styling
-* Flexbox
-* Grid
-* JavaScript practice
-* Browser Developer Tools
-* HTTP request testing
-* Other practical tasks
 
 ---
 
@@ -117,20 +82,6 @@ Lab work may include:
 The `Code Practice` folder contains my individual practice code.
 
 It includes small programs and experiments created while learning different web technologies.
-
-Examples:
-
-* Basic HTML pages
-* HTML headings and paragraphs
-* Text formatting
-* Tables
-* Ordered and unordered lists
-* Div layouts
-* CSS practice
-* JavaScript practice
-* DOM practice
-* Other web development exercises
-
 ---
 
 ## Tools & Technologies
@@ -165,26 +116,6 @@ Through this course, I aim to:
 * Maintain organized and version-controlled coursework
 
 ---
-
-## Progress
-
-| Area                | Status      |
-| ------------------- | ----------- |
-| HTML Basics         | In Progress |
-| HTML Tables & Lists | In Progress |
-| CSS                 | Upcoming    |
-| Flexbox             | Upcoming    |
-| CSS Grid            | Upcoming    |
-| JavaScript          | Upcoming    |
-| DOM                 | Upcoming    |
-| HTTP & URLs         | In Progress |
-| Developer Tools     | In Progress |
-| Assignments         | Ongoing     |
-| Labs                | Ongoing     |
-| Code Practice       | Ongoing     |
-
----
-
 ## GitHub Repository
 
 This repository is continuously updated as I progress through the Web Technologies course.
