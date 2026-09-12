@@ -1,4 +1,4 @@
-````markdown
+
 # Web Technologies Course
 
 Welcome to my **Web Technologies Course** repository.
@@ -208,5 +208,4 @@ This repository serves as my personal **Web Technologies Course workspace**, whe
 
 ```
 
-**Recommended folder structure:** `Assignments` + `Labs` + `Code Practice` + `Notes` rakhna best rahega. Is tarah semester ke end tak repo properly organized rahegi aur GitHub portfolio mein bhi clean lagegi.
-```
+
