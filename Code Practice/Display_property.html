@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+
+    <style>
+
+        /* 1. Block */
+        .block {
+            display: block;
+            background-color: lightblue;
+            width: 300px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        /* 2. Inline */
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            width: 300px;   /* width/height normally don't work */
+            height: 100px;
+            margin: 20px;
+        }
+
+        /* 3. Inline Block */
+        .inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            width: 150px;
+            height: 80px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* 4. None */
+        .none {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        /* 5. Flex */
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .flex-box {
+            background-color: steelblue;
+            color: white;
+            padding: 30px;
+        }
+
+        /* 6. Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .grid-box {
+            background-color: purple;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* 7. Hide element */
+        .hidden {
+            visibility: hidden;
+            background-color: orange;
+            padding: 20px;
+        }
+
+        /* 8. Display table */
+        .table-box {
+            display: table;
+            background-color: pink;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Display Property</h1>
+
+
+    <!-- BLOCK -->
+
+    <h2>1. Display: Block</h2>
+
+    <span class="block">Block 1</span>
+    <span class="block">Block 2</span>
+
+
+    <!-- INLINE -->
+
+    <h2>2. Display: Inline</h2>
+
+    <div>
+        <span class="inline">Inline 1</span>
+        <span class="inline">Inline 2</span>
+    </div>
+
+
+    <!-- INLINE-BLOCK -->
+
+    <h2>3. Display: Inline-Block</h2>
+
+    <div>
+        <div class="inline-block">Box 1</div>
+        <div class="inline-block">Box 2</div>
+        <div class="inline-block">Box 3</div>
+    </div>
+
+
+    <!-- NONE -->
+
+    <h2>4. Display: None</h2>
+
+    <div class="none">
+        You cannot see this element.
+    </div>
+
+    <p>The above div exists in HTML but display:none hides it completely.</p>
+
+
+    <!-- FLEX -->
+
+    <h2>5. Display: Flex</h2>
+
+    <div class="flex-container">
+        <div class="flex-box">1</div>
+        <div class="flex-box">2</div>
+        <div class="flex-box">3</div>
+    </div>
+
+
+    <!-- GRID -->
+
+    <h2>6. Display: Grid</h2>
+
+    <div class="grid-container">
+        <div class="grid-box">1</div>
+        <div class="grid-box">2</div>
+        <div class="grid-box">3</div>
+        <div class="grid-box">4</div>
+        <div class="grid-box">5</div>
+        <div class="grid-box">6</div>
+    </div>
+
+
+    <!-- VISIBILITY -->
+
+    <h2>7. Visibility: Hidden</h2>
+
+    <div class="hidden">
+        This element is hidden but its space remains.
+    </div>
+
+    <p>This paragraph appears after the hidden element.</p>
+
+
+    <!-- TABLE -->
+
+    <h2>8. Display: Table</h2>
+
+    <div class="table-box">
+        This behaves like a table element.
+    </div>
+
+</body>
+</html>
