@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Box Model Practice</title>
+
+    <style>
+
+        body {
+            background-color: lightgray;
+            font-family: Arial;
+        }
+
+
+        /* Basic Box Model */
+
+        .box1 {
+            width: 300px;
+            height: 150px;
+
+            padding: 20px;
+
+            border: 5px solid blue;
+
+            margin: 30px;
+
+            background-color: lightblue;
+        }
+
+
+        /* Box Sizing: Border Box */
+
+        .box2 {
+            width: 300px;
+            height: 150px;
+
+            padding: 20px;
+
+            border: 5px solid red;
+
+            margin: 30px;
+
+            background-color: lightpink;
+
+            box-sizing: border-box;
+        }
+
+
+        /* Content Box */
+
+        .box3 {
+            width: 300px;
+            height: 150px;
+
+            padding: 20px;
+
+            border: 5px solid green;
+
+            margin: 30px;
+
+            background-color: lightgreen;
+
+            box-sizing: content-box;
+        }
+
+
+        /* Individual Padding */
+
+        .box4 {
+            width: 300px;
+            height: 100px;
+
+            padding-top: 20px;
+            padding-right: 30px;
+            padding-bottom: 40px;
+            padding-left: 50px;
+
+            border: 3px solid purple;
+
+            margin: 30px;
+
+            background-color: lavender;
+        }
+
+
+        /* Individual Border */
+
+        .box5 {
+            width: 300px;
+            height: 100px;
+
+            padding: 20px;
+
+            border-top: 5px solid red;
+            border-right: 5px solid blue;
+            border-bottom: 5px solid green;
+            border-left: 5px solid orange;
+
+            margin: 30px;
+
+            background-color: white;
+        }
+
+
+        /* Complete Box */
+
+        .box6 {
+            width: 300px;
+            height: 150px;
+
+            padding: 25px;
+
+            border: 5px solid black;
+            border-radius: 15px;
+
+            margin: 40px;
+
+            background-color: orange;
+
+            box-sizing: border-box;
+        }
+
+
+        /* Box Sizing for all elements */
+
+        .box7 {
+            width: 300px;
+            height: 150px;
+
+            padding: 30px;
+
+            border: 10px solid navy;
+
+            margin: 30px;
+
+            background-color: white;
+
+            box-sizing: border-box;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Box Model</h1>
+
+
+    <div class="box1">
+        <h2>Basic Box</h2>
+
+        <p>
+            Content + Padding + Border + Margin
+        </p>
+    </div>
+
+
+    <div class="box2">
+        <h2>Border Box</h2>
+
+        <p>
+            box-sizing: border-box
+        </p>
+    </div>
+
+
+    <div class="box3">
+        <h2>Content Box</h2>
+
+        <p>
+            box-sizing: content-box
+        </p>
+    </div>
+
+
+    <div class="box4">
+        Individual Padding
+    </div>
+
+
+    <div class="box5">
+        Individual Borders
+    </div>
+
+
+    <div class="box6">
+        Complete Box Model
+    </div>
+
+
+    <div class="box7">
+        Box Sizing Practice
+    </div>
+
+</body>
+
+</html>
