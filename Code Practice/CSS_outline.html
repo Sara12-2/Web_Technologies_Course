@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Outline Practice</title>
+
+    <style>
+
+        body {
+            background-color: lightgray;
+            font-family: Arial;
+        }
+
+
+        /* 1. Basic Outline */
+
+        .box1 {
+            width: 300px;
+            padding: 30px;
+
+            background-color: white;
+
+            border: 3px solid black;
+            outline: 4px solid red;
+
+            margin: 40px;
+        }
+
+
+        /* 2. Outline Width */
+
+        .box2 {
+            width: 300px;
+            padding: 30px;
+
+            background-color: lightblue;
+
+            border: 3px solid blue;
+
+            outline-width: 10px;
+            outline-style: solid;
+            outline-color: green;
+
+            margin: 40px;
+        }
+
+
+        /* 3. Outline Style */
+
+        .solid {
+            outline: 4px solid red;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .dashed {
+            outline: 4px dashed blue;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .dotted {
+            outline: 4px dotted green;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .double {
+            outline: 5px double purple;
+            padding: 20px;
+            margin: 30px;
+        }
+
+
+        /* 4. Outline Offset */
+
+        .box3 {
+            width: 300px;
+            padding: 30px;
+
+            background-color: lightyellow;
+
+            border: 3px solid black;
+
+            outline: 4px solid red;
+
+            outline-offset: 10px;
+
+            margin: 50px;
+        }
+
+
+        /* 5. Rounded Element with Outline */
+
+        .box4 {
+            width: 300px;
+            padding: 30px;
+
+            background-color: lightgreen;
+
+            border: 3px solid green;
+            border-radius: 15px;
+
+            outline: 4px solid blue;
+
+            margin: 40px;
+        }
+
+
+        /* 6. Remove Outline */
+
+        .box5 {
+            width: 300px;
+            padding: 30px;
+
+            background-color: white;
+
+            border: 3px solid black;
+
+            outline: none;
+
+            margin: 30px;
+        }
+
+
+        /* 7. Input Outline */
+
+        input {
+            padding: 10px;
+
+            border: 2px solid gray;
+        }
+
+        input:focus {
+            outline: 3px solid blue;
+            outline-offset: 2px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Outline Practice</h1>
+
+
+    <div class="box1">
+        Basic Outline
+    </div>
+
+
+    <div class="box2">
+        Outline Width, Style and Color
+    </div>
+
+
+    <div class="solid">
+        Solid Outline
+    </div>
+
+
+    <div class="dashed">
+        Dashed Outline
+    </div>
+
+
+    <div class="dotted">
+        Dotted Outline
+    </div>
+
+
+    <div class="double">
+        Double Outline
+    </div>
+
+
+    <div class="box3">
+        Outline Offset
+    </div>
+
+
+    <div class="box4">
+        Rounded Border + Outline
+    </div>
+
+
+    <div class="box5">
+        No Outline
+    </div>
+
+
+    <h2>Input Focus</h2>
+
+    <input type="text" placeholder="Click here">
+
+</body>
+
+</html>
