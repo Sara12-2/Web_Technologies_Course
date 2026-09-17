@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Practice</title>
+
+    <style>
+
+        /* Flex Container */
+        .container {
+            display: flex;
+            background-color: lightgray;
+            padding: 30px;
+            gap: 40px;
+        }
+
+        .box {
+            background-color: steelblue;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Flex Direction */
+        .row {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* Justify Content */
+        .justify {
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgray;
+            padding: 40px;
+        }
+
+        /* Align Items */
+        .align {
+            display: flex;
+            align-items: center;
+            height: 200px;
+            background-color: lightgray;
+            gap: 40px;
+        }
+
+        /* Flex Wrap */
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .wrap .box {
+            width: 150px;
+        }
+
+        /* Flex Grow */
+        .grow {
+            display: flex;
+            gap: 40px;
+        }
+
+        .grow .box {
+            flex-grow: 1;
+        }
+
+        /* Different Grow */
+        .grow2 {
+            display: flex;
+        }
+
+        .grow2 .box1 {
+            flex-grow: 1;
+        }
+
+        .grow2 .box2 {
+            flex-grow: 2;
+        }
+
+        /* Order */
+        .order {
+            display: flex;
+            gap: 10px;
+        }
+
+        .order .box1 {
+            order: 3;
+        }
+
+        .order .box2 {
+            order: 1;
+        }
+
+        .order .box3 {
+            order: 2;
+        }
+
+        /* Align Self */
+        .self {
+            display: flex;
+            align-items: flex-start;
+            height: 200px;
+            background-color: lightgray;
+            gap: 10px;
+        }
+
+        .self .special {
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Flexbox Practice</h1>
+
+    <!-- 1. display:flex -->
+    <h2>1. Display Flex</h2>
+
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+
+    <!-- 2. Flex Direction Row -->
+    <h2>2. Flex Direction - Row</h2>
+
+    <div class="row">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <!-- 3. Flex Direction Column -->
+    <h2>3. Flex Direction - Column</h2>
+
+    <div class="column">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <!-- 4. Justify Content -->
+    <h2>4. Justify Content</h2>
+
+    <div class="justify">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <!-- 5. Align Items -->
+    <h2>5. Align Items</h2>
+
+    <div class="align">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <!-- 6. Flex Wrap -->
+    <h2>6. Flex Wrap</h2>
+
+    <div class="wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+
+
+    <!-- 7. Flex Grow -->
+    <h2>7. Flex Grow</h2>
+
+    <div class="grow">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+
+    <!-- 8. Different Flex Grow -->
+    <h2>8. Different Flex Grow</h2>
+
+    <div class="grow2">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+    </div>
+
+
+    <!-- 9. Order -->
+    <h2>9. Order</h2>
+
+    <div class="order">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+
+
+    <!-- 10. Align Self -->
+    <h2>10. Align Self</h2>
+
+    <div class="self">
+        <div class="box">1</div>
+        <div class="box special">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+</html>
