@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Margin Practice</title>
+
+    <style>
+
+        body {
+            background-color: lightgray;
+        }
+
+        /* 1. Margin on all sides */
+        .box1 {
+            background-color: lightblue;
+            width: 250px;
+            height: 100px;
+
+            margin: 30px;
+        }
+
+
+        /* 2. Different margin for each side */
+        .box2 {
+            background-color: lightgreen;
+            width: 250px;
+            height: 100px;
+
+            margin-top: 50px;
+            margin-right: 40px;
+            margin-bottom: 60px;
+            margin-left: 80px;
+        }
+
+
+        /* 3. Margin shorthand - one value */
+        .box3 {
+            background-color: lightpink;
+            width: 250px;
+            height: 100px;
+
+            margin: 40px;
+        }
+
+
+        /* 4. Two values
+           Top & Bottom = 20px
+           Left & Right = 50px
+        */
+        .box4 {
+            background-color: lightyellow;
+            width: 250px;
+            height: 100px;
+
+            margin: 20px 50px;
+        }
+
+
+        /* 5. Three values
+           Top = 10px
+           Left & Right = 30px
+           Bottom = 50px
+        */
+        .box5 {
+            background-color: lightcoral;
+            width: 250px;
+            height: 100px;
+
+            margin: 10px 30px 50px;
+        }
+
+
+        /* 6. Four values
+           Top = 10px
+           Right = 20px
+           Bottom = 30px
+           Left = 40px
+        */
+        .box6 {
+            background-color: lightseagreen;
+            width: 250px;
+            height: 100px;
+
+            margin: 10px 20px 30px 40px;
+        }
+
+
+        /* 7. Center a block using auto */
+        .box7 {
+            background-color: orange;
+            width: 400px;
+            height: 100px;
+
+            margin: 30px auto;
+        }
+
+
+        /* 8. Individual auto margin */
+        .box8 {
+            background-color: purple;
+            color: white;
+            width: 300px;
+            height: 100px;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /* 9. Negative margin */
+        .box9 {
+            background-color: red;
+            color: white;
+            width: 250px;
+            height: 100px;
+
+            margin-top: -20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Margin Practice</h1>
+
+    <div class="box1">
+        Margin: 30px
+    </div>
+
+    <div class="box2">
+        Individual Margins
+    </div>
+
+    <div class="box3">
+        Margin: 40px
+    </div>
+
+    <div class="box4">
+        Margin: 20px 50px
+    </div>
+
+    <div class="box5">
+        Margin: 10px 30px 50px
+    </div>
+
+    <div class="box6">
+        Margin: 10px 20px 30px 40px
+    </div>
+
+    <div class="box7">
+        Centered using margin: auto
+    </div>
+
+    <div class="box8">
+        Left + Right auto
+    </div>
+
+    <div class="box9">
+        Negative Margin
+    </div>
+
+</body>
+</html>
