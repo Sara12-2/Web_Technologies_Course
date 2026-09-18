@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Lists Practice</title>
+
+    <style>
+
+        /* 1. Unordered List */
+
+        .skills {
+            list-style-type: square;
+        }
+
+
+        /* 2. Circle Bullets */
+
+        .subjects {
+            list-style-type: circle;
+        }
+
+
+        /* 3. No Bullets */
+
+        .no-bullets {
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        /* 4. Ordered List */
+
+        .numbers {
+            list-style-type: decimal;
+        }
+
+
+        /* 5. Roman Numbers */
+
+        .roman {
+            list-style-type: upper-roman;
+        }
+
+
+        /* 6. Lowercase Letters */
+
+        .letters {
+            list-style-type: lower-alpha;
+        }
+
+
+        /* 7. Uppercase Letters */
+
+        .capital-letters {
+            list-style-type: upper-alpha;
+        }
+
+
+        /* 8. Custom List Styling */
+
+        .custom-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .custom-list li {
+            background-color: lightgray;
+            margin: 5px;
+            padding: 10px;
+            width: 200px;
+        }
+
+
+        /* 9. Horizontal List */
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu a:hover {
+            color: blue;
+        }
+
+
+        /* 10. List with Border */
+
+        .border-list {
+            list-style-type: none;
+            padding: 0;
+            width: 250px;
+        }
+
+        .border-list li {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Lists Practice</h1>
+
+
+    <!-- 1. Square Bullets -->
+
+    <h2>1. Square Bullets</h2>
+
+    <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+
+
+    <!-- 2. Circle Bullets -->
+
+    <h2>2. Circle Bullets</h2>
+
+    <ul class="subjects">
+        <li>DAA</li>
+        <li>DSA</li>
+        <li>Operating System</li>
+        <li>Web Technologies</li>
+    </ul>
+
+
+    <!-- 3. No Bullets -->
+
+    <h2>3. No Bullets</h2>
+
+    <ul class="no-bullets">
+        <li>Home</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Contact</li>
+    </ul>
+
+
+    <!-- 4. Numbers -->
+
+    <h2>4. Ordered List</h2>
+
+    <ol class="numbers">
+        <li>Wake Up</li>
+        <li>Study</li>
+        <li>Practice Coding</li>
+        <li>Complete Tasks</li>
+    </ol>
+
+
+    <!-- 5. Roman Numbers -->
+
+    <h2>5. Roman Numbers</h2>
+
+    <ol class="roman">
+        <li>Python</li>
+        <li>Machine Learning</li>
+        <li>Deep Learning</li>
+        <li>NLP</li>
+    </ol>
+
+
+    <!-- 6. Lowercase Letters -->
+
+    <h2>6. Lowercase Letters</h2>
+
+    <ol class="letters">
+        <li>Frontend</li>
+        <li>Backend</li>
+        <li>Database</li>
+        <li>Deployment</li>
+    </ol>
+
+
+    <!-- 7. Uppercase Letters -->
+
+    <h2>7. Uppercase Letters</h2>
+
+    <ol class="capital-letters">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+
+    <!-- 8. Custom List -->
+
+    <h2>8. Custom Styled List</h2>
+
+    <ul class="custom-list">
+        <li>Python</li>
+        <li>React</li>
+        <li>FastAPI</li>
+        <li>MySQL</li>
+    </ul>
+
+
+    <!-- 9. Horizontal List -->
+
+    <h2>9. Horizontal List</h2>
+
+    <ul class="menu">
+
+        <li>
+            <a href="#">Home</a>
+        </li>
+
+        <li>
+            <a href="#">About</a>
+        </li>
+
+        <li>
+            <a href="#">Projects</a>
+        </li>
+
+        <li>
+            <a href="#">Contact</a>
+        </li>
+
+    </ul>
+
+
+    <!-- 10. Border List -->
+
+    <h2>10. List with Border</h2>
+
+    <ul class="border-list">
+
+        <li>Web Development</li>
+        <li>AI Engineering</li>
+        <li>Machine Learning</li>
+        <li>Data Science</li>
+
+    </ul>
+
+</body>
+</html>
