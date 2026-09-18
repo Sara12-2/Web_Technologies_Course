@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website Layout Practice</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* =========================
+           MAIN WEBSITE
+        ========================== */
+
+        .website {
+            min-height: 100vh;
+
+            display: grid;
+
+            grid-template-columns: 200px 1fr;
+
+            grid-template-rows: 80px 60px 1fr 60px;
+
+            grid-template-areas:
+
+                "header header"
+
+                "navbar navbar"
+
+                "sidebar main"
+
+                "footer footer";
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            grid-area: header;
+
+            background-color: #333;
+
+            color: white;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================== */
+
+        nav {
+            grid-area: navbar;
+
+            background-color: #555;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 50px;
+        }
+
+        nav a {
+            color: white;
+
+            text-decoration: Capitalize;
+
+            font-size: 20px;
+        }
+
+
+        /* =========================
+           SIDEBAR
+        ========================== */
+
+        aside {
+            grid-area: sidebar;
+
+            background-color: #eeeeee;
+
+            padding: 20px;
+        }
+
+        aside h3 {
+            margin-top: 0;
+        }
+
+        aside p {
+            padding: 10px;
+
+            background-color: white;
+        }
+
+
+        /* =========================
+           MAIN
+        ========================== */
+
+        main {
+            grid-area: main;
+
+            padding: 30px;
+
+            background-color: #f5f5f5;
+        }
+
+
+        /* =========================
+           CARDS
+        ========================== */
+
+        .cards {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+
+            padding: 30px;
+
+            text-align: center;
+
+            border: 1px solid #ddd;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            grid-area: footer;
+
+            background-color: #333;
+
+            color: white;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="website">
+
+
+        <!-- HEADER -->
+
+        <header>
+
+            <h1>My Website</h1>
+
+        </header>
+
+
+        <!-- NAVBAR -->
+
+        <nav>
+
+            <a href="#">Home</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Projects</a>
+
+            <a href="#">Contact</a>
+
+        </nav>
+
+
+        <!-- SIDEBAR -->
+
+        <aside>
+
+            <h3>Sidebar</h3>
+
+            <p>Dashboard</p>
+
+            <p>Profile</p>
+
+            <p>Settings</p>
+
+            <p>Logout</p>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main>
+
+            <h2>Welcome</h2>
+
+            <p>
+                This is the main content area of the website.
+            </p>
+
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Structure of website</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Styling of website</p>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Functionality of website</p>
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>© 2026 My Website</p>
+
+        </footer>
+
+
+    </div>
+
+</body>
+</html>
