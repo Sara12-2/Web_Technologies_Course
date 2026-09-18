@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Icons Practice</title>
+
+
+    <!-- Font Awesome CDN -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <style>
+
+        /* =========================
+           1. BASIC ICON
+        ========================== */
+
+        .icon {
+            font-size: 30px;
+        }
+
+
+        /* =========================
+           2. ICON COLOR
+        ========================== */
+
+        .home {
+            color: blue;
+        }
+
+        .user {
+            color: green;
+        }
+
+        .heart {
+            color: red;
+        }
+
+
+        /* =========================
+           3. ICON SPACING
+        ========================== */
+
+        .social-icons i {
+            font-size: 35px;
+
+            margin: 40px;
+        }
+
+
+        /* =========================
+           4. ICON HOVER
+        ========================== */
+
+        .social-icons i:hover {
+            transform: scale(1.2);
+
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           5. ICON BOX
+        ========================== */
+
+        .icon-box {
+            width: 100px;
+
+            padding: 20px;
+
+            margin: 20px;
+
+            text-align: center;
+
+            border: 1px solid black;
+        }
+
+        .icon-box i {
+            font-size: 40px;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* =========================
+           6. ICON + TEXT
+        ========================== */
+
+        .menu-item {
+            font-size: 20px;
+
+            margin: 15px;
+        }
+
+        .menu-item i {
+            margin-right: 10px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>CSS Icons Practice</h1>
+
+
+    <!-- =========================
+         BASIC ICONS
+    ========================== -->
+
+    <h2>1. Basic Icons</h2>
+
+    <i class="fa-solid fa-house icon"></i>
+
+    <i class="fa-solid fa-user icon"></i>
+
+    <i class="fa-solid fa-heart icon"></i>
+
+
+    <!-- =========================
+         COLORED ICONS
+    ========================== -->
+
+    <h2>2. Colored Icons</h2>
+
+    <i class="fa-solid fa-house icon home"></i>
+
+    <i class="fa-solid fa-user icon user"></i>
+
+    <i class="fa-solid fa-heart icon heart"></i>
+
+
+    <!-- =========================
+         SOCIAL ICONS
+    ========================== -->
+
+    <h2>3. Social Icons</h2>
+
+    <div class="social-icons">
+
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <i class="fa-brands fa-github"></i>
+
+        <i class="fa-brands fa-linkedin"></i>
+
+        <i class="fa-brands fa-youtube"></i>
+
+    </div>
+
+
+    <!-- =========================
+         ICON BOX
+    ========================== -->
+
+    <h2>4. Icon Box</h2>
+
+    <div class="icon-box">
+
+        <i class="fa-solid fa-code"></i>
+
+        <p>Web Development</p>
+
+    </div>
+
+
+    <!-- =========================
+         ICON + TEXT
+    ========================== -->
+
+    <h2>5. Icon With Text</h2>
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-house"></i>
+
+        Home
+
+    </div>
+
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-user"></i>
+
+        Profile
+
+    </div>
+
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-gear"></i>
+
+        Settings
+
+    </div>
+
+
+    <div class="menu-item">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        Messages
+
+    </div>
+
+
+</body>
+</html>
