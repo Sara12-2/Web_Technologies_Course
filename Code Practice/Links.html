@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Links Practice</title>
+
+    <style>
+
+        /* Basic Link */
+        .basic-link {
+            color: blue;
+            text-decoration: underline;
+        }
+
+
+        /* Link without underline */
+        .no-underline {
+            color: green;
+            text-decoration: none;
+        }
+
+
+        /* Hover Effect */
+        .hover-link {
+            color: purple;
+            text-decoration: none;
+        }
+
+        .hover-link:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+
+        /* Visited Link */
+        .visited-link {
+            color: orange;
+        }
+
+        .visited-link:visited {
+            color: brown;
+        }
+
+
+        /* Active Link */
+        .active-link {
+            color: black;
+        }
+
+        .active-link:active {
+            color: red;
+        }
+
+
+        /* Link as Button */
+        .button-link {
+            display: inline-block;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+        }
+
+        .button-link:hover {
+            background-color: darkblue;
+        }
+
+
+        /* Another Button */
+        .profile-link {
+            display: inline-block;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .profile-link:hover {
+            background-color: darkgreen;
+        }
+
+
+        /* Link with Border */
+        .border-link {
+            color: black;
+            text-decoration: none;
+            border: 2px solid black;
+            padding: 8px 15px;
+        }
+
+        .border-link:hover {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Links Practice</h1>
+
+    <h2>1. Basic Link</h2>
+
+    <a href="https://www.google.com" class="basic-link">
+        Google
+    </a>
+
+
+    <h2>2. Link Without Underline</h2>
+
+    <a href="https://www.youtube.com" class="no-underline">
+        YouTube
+    </a>
+
+
+    <h2>3. Hover Effect</h2>
+
+    <a href="https://www.github.com" class="hover-link">
+        GitHub
+    </a>
+
+
+    <h2>4. Visited Link</h2>
+
+    <a href="https://www.wikipedia.org" class="visited-link">
+        Wikipedia
+    </a>
+
+
+    <h2>5. Active Link</h2>
+
+    <a href="https://www.example.com" class="active-link">
+        Click Me
+    </a>
+
+
+    <h2>6. Link as Button</h2>
+
+    <a href="https://www.google.com" class="button-link">
+        Visit Google
+    </a>
+
+
+    <h2>7. Rounded Link Button</h2>
+
+    <a href="#" class="profile-link">
+        My Profile
+    </a>
+
+
+    <h2>8. Link with Border</h2>
+
+    <a href="#" class="border-link">
+        Learn More
+    </a>
+
+
+    <h2>9. Open Link in New Tab</h2>
+
+    <a href="https://www.github.com" target="_blank">
+        Open GitHub
+    </a>
+
+</body>
+</html>
