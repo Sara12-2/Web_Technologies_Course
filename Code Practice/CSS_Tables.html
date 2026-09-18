@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Tables Practice</title>
+
+    <style>
+
+        /* Basic Table */
+
+        .basic-table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        .basic-table th,
+        .basic-table td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+
+        /* Table Heading */
+
+        .basic-table th {
+            background-color: lightblue;
+            text-align: center;
+        }
+
+
+        /* Table Data */
+
+        .basic-table td {
+            text-align: left;
+        }
+
+
+        /* Hover Effect */
+
+        .basic-table tr:hover {
+            background-color: lightgray;
+        }
+
+
+        /* Second Table */
+
+        .student-table {
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        .student-table th,
+        .student-table td {
+            border: 2px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .student-table th {
+            background-color: navy;
+            color: white;
+        }
+
+        .student-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .student-table tr:hover {
+            background-color: lightyellow;
+        }
+
+
+        /* Table Caption */
+
+        .student-table caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+
+        /* Different Column Width */
+
+        .name-column {
+            width: 200px;
+        }
+
+        .marks-column {
+            width: 100px;
+        }
+
+
+        /* Rounded Table Container */
+
+        .table-container {
+            width: 700px;
+            border: 2px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-container th,
+        .table-container td {
+            padding: 12px;
+            border-bottom: 1px solid gray;
+        }
+
+        .table-container th {
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Tables Practice</h1>
+
+
+    <!-- ========================= -->
+    <!-- 1. Basic Table -->
+    <!-- ========================= -->
+
+    <h2>1. Basic Table</h2>
+
+    <table class="basic-table">
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+
+        <tr>
+            <td>Sara</td>
+            <td>20</td>
+            <td>Layyah</td>
+        </tr>
+
+        <tr>
+            <td>Ali</td>
+            <td>21</td>
+            <td>Lahore</td>
+        </tr>
+
+        <tr>
+            <td>Hassan</td>
+            <td>22</td>
+            <td>Multan</td>
+        </tr>
+
+    </table>
+
+
+    <!-- ========================= -->
+    <!-- 2. Student Marks Table -->
+    <!-- ========================= -->
+
+    <h2>2. Student Marks Table</h2>
+
+    <table class="student-table">
+
+        <caption>Student Result</caption>
+
+        <tr>
+            <th class="name-column">Name</th>
+            <th>Subject</th>
+            <th class="marks-column">Marks</th>
+            <th>Grade</th>
+        </tr>
+
+        <tr>
+            <td>Sara</td>
+            <td>Web Technologies</td>
+            <td>95</td>
+            <td>A+</td>
+        </tr>
+
+        <tr>
+            <td>Ali</td>
+            <td>DAA</td>
+            <td>88</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>Hassan</td>
+            <td>DSA</td>
+            <td>82</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>Ayesha</td>
+            <td>Operating System</td>
+            <td>90</td>
+            <td>A+</td>
+        </tr>
+
+    </table>
+
+
+    <!-- ========================= -->
+    <!-- 3. Table with Container -->
+    <!-- ========================= -->
+
+    <h2>3. Styled Table</h2>
+
+    <div class="table-container">
+
+        <table>
+
+            <tr>
+                <th>Technology</th>
+                <th>Type</th>
+                <th>Level</th>
+            </tr>
+
+            <tr>
+                <td>Python</td>
+                <td>Programming</td>
+                <td>Advanced</td>
+            </tr>
+
+            <tr>
+                <td>React</td>
+                <td>Frontend</td>
+                <td>Intermediate</td>
+            </tr>
+
+            <tr>
+                <td>FastAPI</td>
+                <td>Backend</td>
+                <td>Intermediate</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+</html>
