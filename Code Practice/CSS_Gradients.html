@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Gradients Practice</title>
+
+    <style>
+
+        /* 1. Simple Linear Gradient */
+
+        .linear {
+            width: 500px;
+            height: 150px;
+
+            background: linear-gradient(
+                red,
+                yellow
+            );
+
+            margin-bottom: 20px;
+        }
+
+
+        /* 2. Left to Right */
+
+        .left-right {
+            width: 500px;
+            height: 150px;
+
+            background: linear-gradient(
+                to right,
+                blue,
+                purple
+            );
+
+            margin-bottom: 20px;
+        }
+
+
+        /* 3. Multiple Colors */
+
+        .multiple {
+            width: 500px;
+            height: 150px;
+
+            background: linear-gradient(
+                to right,
+                red,
+                yellow,
+                green,
+                blue
+            );
+
+            margin-bottom: 20px;
+        }
+
+
+        /* 4. Diagonal Gradient */
+
+        .diagonal {
+            width: 500px;
+            height: 150px;
+
+            background: linear-gradient(
+                45deg,
+                purple,
+                pink,
+                orange
+            );
+
+            margin-bottom: 20px;
+        }
+
+
+        /* 5. Radial Gradient */
+
+        .radial {
+            width: 500px;
+            height: 150px;
+
+            background: radial-gradient(
+                circle,
+                yellow,
+                orange,
+                red
+            );
+
+            margin-bottom: 20px;
+        }
+
+
+        /* 6. Conic Gradient */
+
+        .conic {
+            width: 200px;
+            height: 200px;
+
+            border-radius: 50%;
+
+            background: conic-gradient(
+                red,
+                yellow,
+                green,
+                blue,
+                red
+            );
+
+            margin-bottom: 20px;
+        }
+
+
+        /* 7. Gradient Text Box */
+
+        .card {
+            width: 400px;
+            padding: 30px;
+
+            background: linear-gradient(
+                to right,
+                #667eea,
+                #764ba2
+            );
+
+            color: white;
+            border-radius: 15px;
+        }
+
+
+        /* 8. Gradient Button */
+
+        .gradient-button {
+            display: inline-block;
+
+            padding: 12px 25px;
+
+            background: linear-gradient(
+                to right,
+                blue,
+                purple
+            );
+
+            color: white;
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            margin-top: 15px;
+        }
+
+
+        .gradient-button:hover {
+            background: linear-gradient(
+                to right,
+                purple,
+                blue
+            );
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Gradients</h1>
+
+
+    <h2>1. Linear Gradient</h2>
+
+    <div class="linear"></div>
+
+
+    <h2>2. Left to Right Gradient</h2>
+
+    <div class="left-right"></div>
+
+
+    <h2>3. Multiple Colors</h2>
+
+    <div class="multiple"></div>
+
+
+    <h2>4. Diagonal Gradient</h2>
+
+    <div class="diagonal"></div>
+
+
+    <h2>5. Radial Gradient</h2>
+
+    <div class="radial"></div>
+
+
+    <h2>6. Conic Gradient</h2>
+
+    <div class="conic"></div>
+
+
+    <h2>7. Gradient Card</h2>
+
+    <div class="card">
+
+        <h2>AI Engineer</h2>
+
+        <p>
+            Learning AI, Machine Learning,
+            Deep Learning and Full Stack Development.
+        </p>
+
+        <a href="#" class="gradient-button">
+            Learn More
+        </a>
+
+    </div>
+
+</body>
+</html>
