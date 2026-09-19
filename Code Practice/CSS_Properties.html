@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Useful CSS Properties</title>
+
+    <style>
+
+        /* ========================= */
+        /* 1. Opacity */
+        /* ========================= */
+
+        .opacity-box {
+            width: 300px;
+            padding: 30px;
+
+            background-color: blue;
+            color: white;
+
+            opacity: 0.5;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* ========================= */
+        /* 2. Box Shadow */
+        /* ========================= */
+
+        .shadow-box {
+            width: 300px;
+            padding: 30px;
+
+            background-color: white;
+
+            box-shadow: 5px 5px 15px gray;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* ========================= */
+        /* 3. Overflow */
+        /* ========================= */
+
+        .overflow-box {
+            width: 300px;
+            height: 100px;
+
+            border: 2px solid black;
+
+            overflow: auto;
+
+            padding: 10px;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* ========================= */
+        /* 4. Cursor */
+        /* ========================= */
+
+        .cursor-box {
+            width: 200px;
+            padding: 20px;
+
+            background-color: lightgreen;
+
+            cursor: pointer;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* ========================= */
+        /* 5. Object Fit */
+        /* ========================= */
+
+        .image-box {
+            width: 300px;
+            height: 200px;
+
+            object-fit: cover;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* ========================= */
+        /* 6. Transform */
+        /* ========================= */
+
+        .transform-box {
+            width: 150px;
+            height: 100px;
+
+            background-color: orange;
+
+            padding: 20px;
+
+            transform: rotate(5deg);
+
+            margin: 30px;
+
+        }
+
+
+        /* ========================= */
+        /* 7. Transform Scale */
+        /* ========================= */
+
+        .scale-box {
+            width: 150px;
+            padding: 20px;
+
+            background-color: pink;
+
+            transition: transform 0.3s;
+
+            margin-bottom: 30px;
+        }
+
+        .scale-box:hover {
+            transform: scale(1.2);
+        }
+
+
+        /* ========================= */
+        /* 8. Transition */
+        /* ========================= */
+
+        .transition-button {
+            padding: 15px 25px;
+
+            background-color: blue;
+            color: white;
+
+            border: none;
+
+            transition: 0.5s;
+
+            cursor: pointer;
+
+            margin-bottom: 30px;
+        }
+
+        .transition-button:hover {
+            background-color: red;
+            padding: 15px 40px;
+        }
+
+
+        /* ========================= */
+        /* 9. Z-Index */
+        /* ========================= */
+
+        .z-container {
+            position: relative;
+
+            height: 200px;
+
+            margin-bottom: 30px;
+        }
+
+        .box-one {
+            position: absolute;
+
+            width: 150px;
+            height: 150px;
+
+            background-color: red;
+
+            left: 50px;
+            top: 20px;
+
+            z-index: 1;
+        }
+
+        .box-two {
+            position: absolute;
+
+            width: 150px;
+            height: 150px;
+
+            background-color: blue;
+
+            left: 100px;
+            top: 60px;
+
+            z-index: 2;
+        }
+
+
+        /* ========================= */
+        /* 10. Border Radius */
+        /* ========================= */
+
+        .circle {
+            width: 150px;
+            height: 150px;
+
+            background-color: purple;
+
+            border-radius: 50%;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* ========================= */
+        /* 11. Visibility */
+        /* ========================= */
+
+        .hidden {
+            visibility: hidden;
+        }
+
+
+        /* ========================= */
+        /* 12. Text Overflow */
+        /* ========================= */
+
+        .text-box {
+            width: 250px;
+
+            white-space: nowrap;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            border: 1px solid black;
+
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Useful CSS Properties</h1>
+
+
+    <!-- Opacity -->
+
+    <h2>1. Opacity</h2>
+
+    <div class="opacity-box">
+        This box has 50% opacity.
+    </div>
+
+
+    <!-- Box Shadow -->
+
+    <h2>2. Box Shadow</h2>
+
+    <div class="shadow-box">
+        This box has a shadow.
+    </div>
+
+
+    <!-- Overflow -->
+
+    <h2>3. Overflow</h2>
+
+    <div class="overflow-box">
+
+        This is a long paragraph used to demonstrate
+        the overflow property. When the content becomes
+        larger than the fixed height of the box, the
+        overflow property controls what happens to the
+        extra content.
+
+    </div>
+
+
+    <!-- Cursor -->
+
+    <h2>4. Cursor</h2>
+
+    <div class="cursor-box">
+        Move your mouse here.
+    </div>
+
+
+    <!-- Object Fit -->
+
+    <h2>5. Object Fit</h2>
+
+    <img
+        src="https://picsum.photos/600/400"
+        class="image-box"
+        alt="Sample Image"
+    >
+
+
+    <!-- Transform -->
+
+    <h2>6. Transform Rotate</h2>
+
+    <div class="transform-box">
+        Rotated Box
+    </div>
+
+
+    <!-- Scale -->
+
+    <h2>7. Transform Scale</h2>
+
+    <div class="scale-box">
+        Hover over me
+    </div>
+
+
+    <!-- Transition -->
+
+    <h2>8. Transition</h2>
+
+    <button class="transition-button">
+        Hover Me
+    </button>
+
+
+    <!-- Z Index -->
+
+    <h2>9. Z-Index</h2>
+
+    <div class="z-container">
+
+        <div class="box-one"></div>
+
+        <div class="box-two"></div>
+
+    </div>
+
+
+    <!-- Border Radius -->
+
+    <h2>10. Border Radius</h2>
+
+    <div class="circle"></div>
+
+
+    <!-- Visibility -->
+
+    <h2>11. Visibility</h2>
+
+    <p>
+        This text is visible.
+    </p>
+
+    <p class="hidden">
+        This text is hidden but its space remains.
+    </p>
+
+
+    <!-- Text Overflow -->
+
+    <h2>12. Text Overflow</h2>
+
+    <div class="text-box">
+        This is a very long text that will be hidden.
+    </div>
+
+</body>
+</html>
